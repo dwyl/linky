@@ -1,7 +1,7 @@
 {
   "name": "react-project-setup",
   "version": "1.0.0",
-  "description": "Boilerplate files to instantiate a new react project",
+  "description": "Boilerplate files to instantiate a new react/redux/react-router project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

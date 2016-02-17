@@ -1,5 +1,5 @@
 # setup
-:lightning: A quick-start guide and template for setting up dwyl React projects
+:lightning: A quick-start guide and template for setting up dwyl React - Redux - React-Router projects.
 
 ## Linting & Editors
 
@@ -112,26 +112,15 @@ To take advantage of above please install the  [ESlint](https://atom.io/packages
 - react-router-redux gives us a store enhancer, reducer, navigation actions and action types. These allow us to sync the url and back buttons with our app's routing state.
 - **Warning**: It is a bad pattern to use react-redux's connect decorator to map the state from this reducer to props on your Route components. This can lead to infinite loops and performance problems. react-router already provides this for you via this.props.location
 
-### React Test Utils And test/fron/unit/shallow_render_test_utils/index.js
+### React Test Utils And
 #### What?
 - Tools to to render components in isolation from others (shallow). Docs [here](https://facebook.github.io/react/docs/test-utils.html).
-- Out own testing library to use on output of the shallow render.
-  Methods include:
-    - shallowRender(Component, props) => shallowRender output. One line rather than 3.
-    - getType(element) => one of 'string', html tag or custom component name.
-      Useful to check children.
-    - childrenToArray(element) => array of children, empty if string or no children found. Useful to apply array methods on children.
-    - getTypeStructure(element) => nested arrays of either tuples [type, children] or just string type. Maps out the tree of children to quickly check structure.
-    - findElementsByType(rootElement, type) =>  array of elements found in rendered tree. Goes through all children recursively in tree.
-    - findElementsByClassName(rootElement, className), array of elements found in rendered tree with correct className. Goes through all children recursively in tree.
-    - propNamesMatch(element) => boolean. Determines whether the props passed into the element match those set out in propTypes. Only use on custom elements.
-    - DummyChild: class, with div that has propTypes: dummyProp, name, 'DummyChild' and div with class 'dummy_child'. Useful to pass as child as prop.
 
 #### Why?
 - We need to test our react components!
 
 #### How?
-- Use methods to shallowRender and check the presence and layout of subcomponents within a component and make sure they have correct props, styles and children passed to them.
+- ShallowRender component and check the presence and layout of subcomponents within a component and make sure they have correct props, styles and children passed to them.
 - This acts as a unit test of the component and will need further integration testing afterwards.
 
 ### Redux
