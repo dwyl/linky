@@ -1,0 +1,16 @@
+# macs
+.DS_Store
+
+# config.env
+*.env
+
+# log files
+*.log
+
+# istanbul coverage test
+coverage
+
+#test bundles
+*bundle.js
+
+node_modules
