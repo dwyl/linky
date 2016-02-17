@@ -1,6 +1,36 @@
 # setup
 :lightning: A quick-start guide and template for setting up dwyl React - Redux - React-Router projects.
 
+## Setup, tests and build
+- Install node and npm (versions in `package.json`).
+- Run `npm i` in the console.
+- `npm run test`  will test the source with coverage checks.
+- `npm run build` will compile the source into `public/bundle.js`.
+
+## Developer Set Up
+
+Call `npm run git:init` from the command line. See Gitflow [below](https://github.com/AnalyticRiskTechnology/CMT/tree/setup#gitflow).
+
+
+Optional (But recommended):
+
+- **This runs the app and pushes changes into the browser whenever source files change (hot reloading).**
+  - Run `npm run dev:serve` in the console.
+  - Navigate to `http://localhost:8080/public/`
+
+- **This will run automatically on file change**
+  - Run `npm run dev:test` in the console.
+
+## Continuous Integration (CI)
+#### What?
+- Method of automatically building and testing merge requests to the GitHub master branch.
+
+#### Why?
+- Allows us to be *certain* all code on the master branch is properly tested and has full coverage.
+
+#### How?
+DWYL how to [here](https://github.com/dwyl/learn-circleci).
+
 ## Linting & Editors
 
 [TODO] Decide on configuration!
