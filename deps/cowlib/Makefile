@@ -61,7 +61,7 @@ TEST_ERLC_OPTS += +'{parse_transform, eunit_autoexport}' +'{parse_transform, hor
 
 # Mimetypes module generator.
 
-GEN_URL = http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types
+GEN_URL = https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types
 GEN_SRC = src/cow_mimetypes.erl.src
 GEN_OUT = src/cow_mimetypes.erl
 
