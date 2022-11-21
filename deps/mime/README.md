@@ -13,7 +13,7 @@ of the MIME database. To add any [media type specified by
 IANA](https://www.iana.org/assignments/media-types/media-types.xhtml),
 please submit a pull request. You can also add specific types to your
 application via a compile-time configuration, see [the documentation for
-more information](http://hexdocs.pm/mime/).
+more information](https://hexdocs.pm/mime/).
 
 ## Installation
 
